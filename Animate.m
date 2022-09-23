@@ -2,21 +2,17 @@ clc;
 
 % Acquiring the model parameters
 Params = out.params;
-m1=Params(1); % Forearm's mass (kg)
-m2 =Params(2); % Hand's mass (kg)
-md =Params(3); % Absorber's mass  (kg)
-g =Params(4); % Gravity constant
-c1 =Params(5); % Damping coeff of elbow joint
-c2 =Params(6); % Damping coeff of wrist joint
-Kt1 =Params(7); % Spring coeff of elbow joint
-Kt2 =Params(8); % Spring coeff of wrist joint
-cd =Params(9); % Damping coeff of absorber
-kd =Params(10); % Spring coeff of absorber
-l1 =Params(11); % Forearm length (m)
-l2 =Params(12); % Hand length(m)
-lc1=Params(13); % Distance of center of mass of forearm from elbow joint(m)
-lc2 =Params(14); % Distance of center of mass of hand from wrist joint(m)
-ld = Params(15); % Distance of absorber from elbow joint(m)
+m1=Params(1); % First arm's mass (kg)
+m2 =Params(2); % Second arm's mass (kg)
+g =Params(3); % Gravity constant
+c1 =Params(4); % Damping coeff of first joint
+c2 =Params(5); % Damping coeff of second joint
+Kt1 =Params(6); % Spring coeff of first joint
+Kt2 =Params(7); % Spring coeff of second joint
+l1 =Params(8); % First arm's length (m)
+l2 =Params(9); % Second arm's length(m)
+lc1=Params(10); % Distance of center of mass of forearm from elbow joint(m)
+lc2 =Params(11); % Distance of center of mass of hand from wrist joint(m)
 
 % Figure initiation and properties
 figure; hold on
